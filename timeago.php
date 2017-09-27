@@ -124,4 +124,13 @@ class TimeAgo
 
 }
 
+
+$timeAgo = new TimeAgo();
+
+$date = new DateTime("now");
+
+echo $timeAgo->LangTimeSpan($date, "ru");
+
+
+
 ?>
