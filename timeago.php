@@ -127,7 +127,7 @@ class TimeAgo
 
 $timeAgo = new TimeAgo();
 
-$date = new DateTime("now");
+$date = "2017-09-27 21:22";
 
 echo $timeAgo->LangTimeSpan($date, "ru");
 
