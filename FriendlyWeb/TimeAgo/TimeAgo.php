@@ -1,4 +1,11 @@
 <?php
+/**
+ * Alexander Dalle
+ * dalle@criptext.com
+ * 
+ */
+
+namespace FriendlyWeb;
 
 class TimeAgo 
 {
@@ -36,8 +43,8 @@ class TimeAgo
 
     public function  LangTimeSpan ($datetime, $lang = 'en', $full = false)
     {
-        $now = new DateTime;
-        $ago = new DateTime($datetime);
+        $now = new \DateTime;
+        $ago = new \DateTime($datetime);
         $diff = $now->diff($ago);
 
         $diff->w = floor($diff->d / 7);
@@ -123,14 +130,5 @@ class TimeAgo
     }
 
 }
-
-
-$timeAgo = new TimeAgo();
-
-$date = "2017-09-27 21:22";
-
-echo $timeAgo->LangTimeSpan($date, "ru");
-
-
 
 ?>
