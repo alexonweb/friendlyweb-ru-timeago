@@ -38,15 +38,15 @@ __full__ - полная запись до секунд. По умолчанию 
 ### Пример
 
 ```
-$date = "2022-05-22 21:22";
+$date = '2022-05-22 21:22';
 
 // выведет примерно следующее: 6 days
 echo $timeAgo->LangTimeSpan($date); 
 
 // выведет примерно следующее: 6 дней назад
-echo $timeAgo->LangTimeSpan($date, "ru") . " назад";
+echo $timeAgo->LangTimeSpan($date, 'ru') . ' назад';
 
 // выведет примерно следующее: 6 дней, 3 часа, 10 секунд
-echo $timeAgo->LangTimeSpan($date, "ru", true);
+echo $timeAgo->LangTimeSpan($date, 'ru', true);
 ```
 
