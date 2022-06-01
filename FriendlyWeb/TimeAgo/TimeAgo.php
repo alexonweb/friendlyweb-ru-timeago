@@ -7,6 +7,8 @@
 
 namespace FriendlyWeb;
 
+use DateTime;
+
 class TimeAgo 
 {
 
@@ -43,8 +45,8 @@ class TimeAgo
 
     public function  LangTimeSpan ($datetime, $lang = 'en', $full = false)
     {
-        $now = new \DateTime;
-        $ago = new \DateTime($datetime);
+        $now = new DateTime;
+        $ago = new DateTime($datetime);
         $diff = $now->diff($ago);
 
         $diff->w = floor($diff->d / 7);
